@@ -1,2 +1,2 @@
 #!/bin/bash
--type d -exec chmod ugo+x {} \;
+chmod -type d -exec ugo+x {} \;
