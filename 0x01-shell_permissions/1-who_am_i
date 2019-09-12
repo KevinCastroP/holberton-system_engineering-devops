@@ -1,0 +1,3 @@
+#!/bin/bash
+_user="$(id -u -n)"
+echo "User name: $_user"
