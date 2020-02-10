@@ -1,20 +1,16 @@
 #!/usr/bin/env bash
 # This script is displaying "Holberton School" 10 times
 
-k=1
-while [ $k -le 59 ]
+hora=0
+hora_max=12
+while [ $hora -le $hora_max ]
 do
-    echo "Hour:$k"
-    case $k in
-	4)
-	    echo "bad luck from China"
-	    ;;
-	9)
-	    echo "bad luck from Japan"
-	    ;;
-	17)
-	    echo "bad luck from Italy"
-	    ;;
-    esac
-((k++))
+    minutes=1
+    echo "Hour: $hora"
+    while [ $minutes -le 59 ]
+    do
+	echo "$minutes"
+    ((minutes++))
+    done
+((hora++))
 done
