@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#displaying my own PID
+
+ps -A uf
