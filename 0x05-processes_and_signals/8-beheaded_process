@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#displaying my own PID
+
+pkill -9 -f "bash ./7-highlander"
