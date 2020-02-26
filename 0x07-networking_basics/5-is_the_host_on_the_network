@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+if [ "$1" == "" ]
+then
+    echo "Usage: ${0:2} {IP_ADDRESS}"
+else
+    ping -c 5 "$1"
+fi
