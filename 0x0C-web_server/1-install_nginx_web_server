@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+#Installing nginx server
+sudo apt update
+sudo apt-get -y install nginx
+sudo ufw allow 'Nginx HTTP'
+sudo ufw status
+sudo systemctl status nginx
+curl 127.0.0.1
