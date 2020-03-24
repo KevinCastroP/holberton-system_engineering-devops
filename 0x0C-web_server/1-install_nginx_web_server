@@ -2,7 +2,9 @@
 #Installing nginx server
 sudo apt update
 sudo apt-get -y install nginx
-sudo ufw allow 'Nginx HTTP'
+sudo ufw allow http
 sudo ufw status
+sudo systectl start nginx
 sudo systemctl status nginx
+echo "Holberton School" > /var/www/html/index.html
 curl 127.0.0.1
