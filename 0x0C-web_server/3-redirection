@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# Install nginx web server port 80
+sudo apt-get update
+sudo apt-get -y install nginx
+sudo ufw allow http
+echo "Holberton School" > /var/www/html/index.html
+printf %s "server {
+    listen 80 default_server;
+    listen [::]:80 default_server;
+    root   /var/www/html;
+    index  index.html index.htm index.nginx-debian.html;
+    location /redirect_me {
+        return 301 https://www.youtube.com/watch?v=QH2-TGUlwu4;
+    }
+}" > /etc/nginx/sites-available/default
+sudo /etc/init.d/nginx restart
