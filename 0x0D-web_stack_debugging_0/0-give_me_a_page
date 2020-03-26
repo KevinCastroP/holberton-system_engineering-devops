@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # Solving a problem connection in a Docker container
 
-sudo /etc/init.d/apache2 restart
+sudo service apache start
