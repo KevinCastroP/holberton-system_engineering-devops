@@ -4,6 +4,20 @@
 sudo apt-get update
 sudo apt-get -y install nginx
 sudo ufw allow 'Nginx HTTP'
-host=$(cat /etc/hostname)
-sed -i "36 i\ \tadd_header X-Served-By $host;\n" /etc/nginx/sites-enabled/default
-service nginx restart
+echo "Holberton School" > /var/www/html/index.html
+echo "Ceci n'est pas une page" > /var/www/html/404.html
+printf %s "server {
+    listen 80 default_server;
+    listen [::]:80 default_server;
+    root   /var/www/html;
+    index  index.html index.htm index.nginx-debian.html;
+    location /redirect_me {
+        return 301 https://www.youtube.com/watch?v=QH2-TGUlwu4;
+    }
+    error_page 404 /404.html;
+    location = /404.html {
+        internal;
+    }
+add_header X-Served-By $HOSTNAME;
+}" > /etc/nginx/sites-available/default
+sudo /etc/init.d/nginx restart
