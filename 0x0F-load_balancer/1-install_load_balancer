@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Installing the LB to my 2 servers
+apt-get install -y software-properties-common
+add-apt-repository -y ppa:vbernat/haproxy-1.6
+apt-get -y update
+apt-get -y install haproxy=1.6.\*
+sed -i "20 i\ \nfrontend my_front\n\tbind *:80\n\tdefault_backend my_back" /etc/haproxy/haproxy.cfg
+sed -i "25 i\\backend my_back\n\tbalance roundrobin\n\tmode http\n\tserver 1169-web-01 35.185.100.242\n\tserver 1169-web-02 54.90.130.112\n" /etc/haproxy/haproxy.cfg
+service haproxy restart
