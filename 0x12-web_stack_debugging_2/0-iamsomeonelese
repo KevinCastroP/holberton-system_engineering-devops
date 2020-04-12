@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Return the whoami execute
+sudo chsh -s /bin/bash "$1"
+sudo su -c whoami "$1"
