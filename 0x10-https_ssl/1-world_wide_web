@@ -1,16 +1,19 @@
 #!/usr/bin/env bash
 #Displaying information about my subdomains
 
-subdomaininfo () {
-    dig "$1" | grep -A1 'ANSWER SECTION:' | tail -n 1 | sed -r "s/$1./$2/g" | sed -r "s/ /\t/g" | sed -r "s/\t/ /g" | awk '{ print "The subdomain " $1 " is a " $4 " record and points to "  $5 }'
+dig_ip()
+{
+    ip_line=$(dig "$2.$1" | grep -A1 'ANSWER SECTION:' | tail -n1)
+    echo "$ip_line $2" | awk '{ print "The subdomain " $6 " is a " $4 " record and points to " $5 }'
 }
 
-if [ "$#" -eq 2 ]
+if [ "$#" -eq 1 ]
 then
-    subdomaininfo "$2.$1" "$2"
-else
-    subdomaininfo "www.$1" "www"
-    subdomaininfo "lb-01.$1" "lb-01"
-    subdomaininfo "web-01.$1" "web-01"
-    subdomaininfo "web-02.$1" "web-02"
+    dig_ip $1 "www"
+    dig_ip $1 "lb-01"
+    dig_ip $1 "web-01"
+    dig_ip $1 "web-02"
+elif [ "$#" -gt 1 ]
+then
+    dig_ip $1 $2
 fi
