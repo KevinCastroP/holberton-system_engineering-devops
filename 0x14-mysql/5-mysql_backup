@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# create a mysql backup with datetime
+time=$( date '+%d-%m-%Y' )
+time+='.tar.gz'
+echo "filename: $time"
+mysqldump -uroot -p"$1" --all-databases > backup.sql
+tar -czvf "$time" backup.sql
