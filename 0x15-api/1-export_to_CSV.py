@@ -5,8 +5,8 @@ Exporting data in CSV format
 
 
 import csv
-import requests
 from sys import argv
+import requests
 
 if __name__ == "__main__":
     id_em = argv[1]

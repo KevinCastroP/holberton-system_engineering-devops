@@ -4,8 +4,8 @@ Returning information about a todo list progress
 """
 
 
-import requests
 from sys import argv
+import requests
 
 if __name__ == "__main__":
     id_em = argv[1]
