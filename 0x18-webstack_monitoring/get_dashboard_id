@@ -1,0 +1,5 @@
+# Curl command
+curl -X GET https://app.datadoghq.com/dashboard/fgq-nv3-fjq/kevins-screenboard-20-may-2020-1841?from_ts=1590015164619&to_ts=1590018764619&live=true \
+-H "Content-Type: application/json" \
+-H "DD-API-KEY: ${DD_CLIENT_API_KEY}" \
+-H "DD-APPLICATION-KEY: ${DD_CLIENT_APP_KEY}"
