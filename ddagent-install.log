@@ -1,0 +1,113 @@
+[34m
+* Installing apt-transport-https
+[0m
+Get:1 http://dl.google.com/linux/chrome/deb stable InRelease [1.811 B]
+Get:2 http://security.ubuntu.com/ubuntu focal-security InRelease [107 kB]
+Hit:3 http://packages.microsoft.com/repos/vscode stable InRelease
+Hit:4 http://ppa.launchpad.net/atareao/telegram/ubuntu focal InRelease
+Hit:5 https://deb.nodesource.com/node_10.x focal InRelease
+Hit:6 http://co.archive.ubuntu.com/ubuntu focal InRelease
+Get:7 http://linux.teamviewer.com/deb stable InRelease [9.388 B]
+Get:9 http://co.archive.ubuntu.com/ubuntu focal-updates InRelease [107 kB]
+Hit:10 http://ppa.launchpad.net/linuxuprising/shutter/ubuntu focal InRelease
+Get:11 http://dl.google.com/linux/chrome/deb stable/main amd64 Packages [1.110 B]
+Get:12 http://co.archive.ubuntu.com/ubuntu focal-backports InRelease [98,3 kB]
+Get:13 https://download.docker.com/linux/ubuntu focal InRelease [36,2 kB]
+Get:14 http://security.ubuntu.com/ubuntu focal-security/main i386 Packages [26,5 kB]
+Get:15 http://security.ubuntu.com/ubuntu focal-security/main amd64 Packages [71,3 kB]
+Get:16 http://security.ubuntu.com/ubuntu focal-security/main Translation-en [26,8 kB]
+Get:17 http://security.ubuntu.com/ubuntu focal-security/main amd64 DEP-11 Metadata [16,7 kB]
+Get:18 http://security.ubuntu.com/ubuntu focal-security/main amd64 c-n-f Metadata [1.984 B]
+Get:19 http://security.ubuntu.com/ubuntu focal-security/restricted amd64 Packages [7.432 B]
+Get:20 http://security.ubuntu.com/ubuntu focal-security/restricted Translation-en [2.152 B]
+Get:21 http://security.ubuntu.com/ubuntu focal-security/universe amd64 Packages [28,0 kB]
+Get:22 http://security.ubuntu.com/ubuntu focal-security/universe i386 Packages [8.724 B]
+Get:23 http://security.ubuntu.com/ubuntu focal-security/universe Translation-en [12,3 kB]
+Get:24 http://security.ubuntu.com/ubuntu focal-security/universe amd64 DEP-11 Metadata [208 B]
+Get:25 http://security.ubuntu.com/ubuntu focal-security/universe amd64 c-n-f Metadata [804 B]
+Get:8 https://packagecloud.io/slacktechnologies/slack/debian jessie InRelease [23,5 kB]
+Get:26 http://linux.teamviewer.com/deb stable/main i386 Packages [5.494 B]
+Get:27 http://linux.teamviewer.com/deb stable/main amd64 Packages [5.775 B]
+Get:28 http://co.archive.ubuntu.com/ubuntu focal-updates/main i386 Packages [58,2 kB]
+Get:29 http://co.archive.ubuntu.com/ubuntu focal-updates/main amd64 Packages [118 kB]
+Get:30 http://co.archive.ubuntu.com/ubuntu focal-updates/main Translation-en [43,3 kB]
+Get:31 http://co.archive.ubuntu.com/ubuntu focal-updates/main amd64 DEP-11 Metadata [90,4 kB]
+Get:32 http://co.archive.ubuntu.com/ubuntu focal-updates/main amd64 c-n-f Metadata [2.716 B]
+Get:33 http://co.archive.ubuntu.com/ubuntu focal-updates/restricted amd64 Packages [7.432 B]
+Get:34 http://co.archive.ubuntu.com/ubuntu focal-updates/restricted Translation-en [2.152 B]
+Get:35 http://co.archive.ubuntu.com/ubuntu focal-updates/universe amd64 Packages [56,1 kB]
+Get:36 http://co.archive.ubuntu.com/ubuntu focal-updates/universe i386 Packages [25,4 kB]
+Get:37 http://co.archive.ubuntu.com/ubuntu focal-updates/universe Translation-en [24,5 kB]
+Get:38 http://co.archive.ubuntu.com/ubuntu focal-updates/universe amd64 DEP-11 Metadata [64,1 kB]
+Get:39 http://co.archive.ubuntu.com/ubuntu focal-updates/universe DEP-11 48x48 Icons [13,2 kB]
+Get:40 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages [1.744 B]
+Get:41 http://co.archive.ubuntu.com/ubuntu focal-updates/universe DEP-11 64x64 Icons [18,9 kB]
+Get:42 http://co.archive.ubuntu.com/ubuntu focal-updates/universe amd64 c-n-f Metadata [1.720 B]
+Get:43 http://co.archive.ubuntu.com/ubuntu focal-backports/universe amd64 DEP-11 Metadata [532 B]
+Get:44 https://packagecloud.io/slacktechnologies/slack/debian jessie/main amd64 Packages [11,9 kB]
+Fetched 1.139 kB in 4s (265 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+apt-transport-https is already the newest version (2.0.2ubuntu0.1).
+0 upgraded, 0 newly installed, 0 to remove and 18 not upgraded.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+dirmngr is already the newest version (2.2.19-3ubuntu2).
+dirmngr set to manually installed.
+0 upgraded, 0 newly installed, 0 to remove and 18 not upgraded.
+[34m
+* Installing APT package sources for Datadog
+[0m
+Warning: apt-key output should not be parsed (stdout is not a terminal)
+Executing: /tmp/apt-key-gpghome.9PpAEQSRs8/gpg.1.sh --recv-keys --keyserver hkp://keyserver.ubuntu.com:80 A2923DFF56EDA6E76E55E492D3A80E30382E94DE
+gpg: key D3A80E30382E94DE: public key "Datadog, Inc <package@datadoghq.com>" imported
+gpg: Total number processed: 1
+gpg:               imported: 1
+[34m
+* Installing the Datadog Agent package
+[0m
+Ign:1 https://apt.datadoghq.com stable InRelease
+Get:2 https://apt.datadoghq.com stable Release [8.324 B]
+Get:3 https://apt.datadoghq.com stable Release.gpg [819 B]
+Get:4 https://apt.datadoghq.com stable/7 amd64 Packages [3.664 B]
+Fetched 12,8 kB in 1s (15,0 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following NEW packages will be installed:
+  datadog-agent
+0 upgraded, 1 newly installed, 0 to remove and 18 not upgraded.
+Need to get 140 MB of archives.
+After this operation, 464 MB of additional disk space will be used.
+Get:1 https://apt.datadoghq.com stable/7 amd64 datadog-agent amd64 1:7.19.2-1 [140 MB]
+Fetched 140 MB in 43s (3.264 kB/s)
+Selecting previously unselected package datadog-agent.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 227264 files and directories currently installed.)
+Preparing to unpack .../datadog-agent_1%3a7.19.2-1_amd64.deb ...
+Unpacking datadog-agent (1:7.19.2-1) ...
+Setting up datadog-agent (1:7.19.2-1) ...
+Creating dd-agent group
+Creating dd-agent user
+Enabling service datadog-agent
+Created symlink /etc/systemd/system/multi-user.target.wants/datadog-agent.service → /lib/systemd/system/datadog-agent.service.
+Created symlink /etc/systemd/system/multi-user.target.wants/datadog-agent-process.service → /lib/systemd/system/datadog-agent-process.service.
+Created symlink /etc/systemd/system/multi-user.target.wants/datadog-agent-trace.service → /lib/systemd/system/datadog-agent-trace.service.
+No datadog.yaml file detected, not starting the agent
+Processing triggers for systemd (245.4-4ubuntu3) ...
+W: --force-yes is deprecated, use one of the options starting with --allow instead.
+[34m
+* Adding your API key to the Agent configuration: /etc/datadog-agent/datadog.yaml
+[0m
+/usr/bin/systemctl
+[34m
+* DD_INSTALL_ONLY environment variable set: the newly installed version of the agent
+will not be started. You will have to do it manually using the following
+command:
+
+    sudo systemctl start datadog-agent
+
+[0m
