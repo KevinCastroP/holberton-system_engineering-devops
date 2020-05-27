@@ -16,7 +16,7 @@ General
 <p>Your Puppet manifests must run without error</p>
 <p>Your Puppet manifests first line must be a comment explaining what the Puppet manifest is about</p>
 <p>Your Puppet manifests files must end with the extension .pp</p>
-<p>Files will be checked with Puppet v3.4</p>
+<p>Files will be checked with Puppet v3.4</p><br>
 
 <p>Install puppet-lint</p>
 <p>$ apt-get install -y ruby</p>
