@@ -1,7 +1,7 @@
 #  Sky is the limit, let's bring that limit higher
 
 exec { 'Mofify limit':
-    command  => 'sed -i s/-n 15/ -n 30000/g /etc/default/nginx',
+    command  => 'sed -i "s/ULIMIT=\"-n 15\"/ULIMIT=\"-n 2000\"/g" /etc/default/nginx',
     provider => 'shell'
 }
 
